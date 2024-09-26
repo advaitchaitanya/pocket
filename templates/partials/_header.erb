@@ -1,5 +1,7 @@
 <header>
   <nav>
-    <a href="https://github.com/advaitchaitanya/pocket">View on GitHub</a>
+    <% navigation.each do |nav_item| %>
+      <li><a href="<%= nav_item['url'] %>"><%= nav_item['title'] %></a></li>
+    <% end %>
   </nav>
 </header>
